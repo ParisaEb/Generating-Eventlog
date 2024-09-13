@@ -55,9 +55,12 @@ net, initial_marking, final_marking = alpha_miner.apply(log)
 gviz = pn_visualizer.apply(net, initial_marking, final_marking)
 pn_visualizer.view(gviz)
 
+
+
 # Discover and visualize the DFG
 dfg = dfg_discovery.apply(log)
 gviz = dfg_visualizer.apply(dfg, parameters={"format": "png"})
 dfg_visualizer.view(gviz)
+
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License 
